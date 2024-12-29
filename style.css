@@ -1,0 +1,156 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+}
+
+main {
+    padding: 20px;
+}
+
+#listaToken {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.token-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.dettagli-button{
+  background-color: #5cb85c; /* Colore di sfondo del pulsante */
+  color: white; /* Colore del testo del pulsante */
+  padding: 10px 20px; /* Spaziatura interna del pulsante */
+  border: none; /* Rimuove il bordo del pulsante */
+  border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+  cursor: pointer; /* Cambia il cursore a una mano quando il mouse è sopra il pulsante */
+  text-decoration: none; /* Rimuove la sottolineatura del testo (se il pulsante è un link) */
+  transition: background-color 0.3s; /* Transizione fluida del colore di sfondo al passaggio del mouse */
+}
+
+.dettagli-button:hover{
+  background-color: #4cae4c; /* Colore di sfondo del pulsante quando il mouse è sopra */
+}
+
+#dettagliToken {
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+}
+
+#formContatto {
+    background-color: white;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    z-index: 1000;
+    width: 80%;
+    max-width: 600px;
+}
+
+#dettagliToken.hidden,
+#formContatto.hidden {
+    display: none;
+}
+
+#dettagliToken h3,
+#dettagliToken h4,
+#formContatto h2{
+  text-align: center;
+}
+#dettagliContent{
+  text-align: center;
+}
+
+#chiudiDettagliButton,
+#chiudiModuloButton{
+  display: block;
+  margin: 0 auto;
+  background-color: #d9534f; /* Colore di sfondo del pulsante */
+  color: white; /* Colore del testo del pulsante */
+  padding: 10px 20px; /* Spaziatura interna del pulsante */
+  border: none; /* Rimuove il bordo del pulsante */
+  border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+  cursor: pointer; /* Cambia il cursore a una mano quando il mouse è sopra il pulsante */
+  text-decoration: none; /* Rimuove la sottolineatura del testo (se il pulsante è un link) */
+  transition: background-color 0.3s; /* Transizione fluida del colore di sfondo al passaggio del mouse */
+}
+#chiudiDettagliButton:hover,
+#chiudiModuloButton:hover{
+  background-color: #c9302c; /* Colore di sfondo del pulsante quando il mouse è sopra */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+form textarea {
+  height: 100px;
+}
+
+form button[type="submit"]{
+  background-color: #5bc0de; /* Colore di sfondo del pulsante */
+  color: white; /* Colore del testo del pulsante */
+  padding: 10px 20px; /* Spaziatura interna del pulsante */
+  border: none; /* Rimuove il bordo del pulsante */
+  border-radius: 5px; /* Arrotonda gli angoli del pulsante */
+  cursor: pointer; /* Cambia il cursore a una mano quando il mouse è sopra il pulsante */
+  text-decoration: none; /* Rimuove la sottolineatura del testo (se il pulsante è un link) */
+  transition: background-color 0.3s; /* Transizione fluida del colore di sfondo al passaggio del mouse */
+}
+form button[type="submit"]:hover{
+  background-color: #31b0d5; /* Colore di sfondo del pulsante quando il mouse è sopra */
+}
+
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
