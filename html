@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Promozione Token</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Promuovi il Tuo Token</h1>
+        <p>Contattaci per la promozione</p>
+        <button id="contattaciButton">Contattaci</button>
+    </header>
+
+    <main>
+        <section id="listaToken">
+            <h2>Token in Promozione</h2>
+            <!-- La lista dei token sarà popolata dinamicamente da Java -->
+            <div class="token-card">
+                <h3>Token di Esempio 1</h3>
+                <p><strong>Prezzo:</strong> $1.23</p>
+                <p><strong>Capitalizzazione:</strong> $100,000</p>
+                <button class="dettagli-button" data-token-id="1">Dettagli</button>
+            </div>
+          <!-- altri token cards -->
+        </section>
+
+        <section id="dettagliToken" class="hidden">
+            <!-- Dettagli del token selezionato saranno mostrati qui -->
+            <button id="chiudiDettagliButton">Chiudi</button>
+            <div id="dettagliContent">
+              <h3>Nome del Token</h3>
+              <p><strong>Simbolo:</strong> ABC</p>
+              <p><strong>Descrizione:</strong> Breve descrizione del token</p>
+              <h4>Advisors</h4>
+              <ul id="listaAdvisors">
+                <!-- La lista degli advisor sarà popolata dinamicamente da Java -->
+              </ul>
+            </div>
+        </section>
+
+      <section id="formContatto" class="hidden">
+          <h2>Contattaci</h2>
+          <form id="moduloContatto">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="tokenNome">Nome del Token:</label>
+            <input type="text" id="tokenNome" name="tokenNome" required>
+
+            <label for="messaggio">Messaggio:</label>
+            <textarea id="messaggio" name="messaggio"></textarea>
+
+            <button type="submit">Invia</button>
+            <button id="chiudiModuloButton">Chiudi</button>
+          </form>
+      </section>
+    </main>
+
+    <footer>
+        <p>© 2023 Promozione Token. Tutti i diritti riservati.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
